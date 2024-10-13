@@ -1,0 +1,94 @@
+.project{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px 170px;
+    gap: 50px;
+}
+
+.project-title{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0px 30px;
+    background: linear-gradient(267deg, #62cff4 10%, #2c67f2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.project-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.project-format h2{
+    font-size: 26px;
+    font-weight: 800;
+    background: linear-gradient(267deg, #62cff4 10%, #2c67f2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-format p{
+    max-width: 550px;
+}
+
+.tools{
+    background: linear-gradient(267deg, #62cff4 10%, #2c67f2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-format:hover{
+    border: 2px solid #2c67f2;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+@media(max-width:768px){
+    .project{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+
+    .project-title h2{
+        padding: 0;
+        font-size: 40px;
+    }
+
+    .project-format{
+        gap: 20px;
+        padding: 22px;
+    }
+
+    .project-format h2{
+        font-size: 24px;
+    }
+
+    .project-format p{
+        font-size: 18px;
+    }
+
+    .project-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

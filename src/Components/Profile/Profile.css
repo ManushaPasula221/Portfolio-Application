@@ -1,0 +1,109 @@
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-pic {
+    height: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.profile h1{
+    text-align: center;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.profile h1 span{
+    background: linear-gradient(267deg, #62cff4 10%, #2c67f2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile p{
+    width: 50%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.profile-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.profile-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #62cff4 -5.09%, #2c67f2 106.28%);
+    cursor: pointer;
+}
+
+.profile-resume{
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.profile-connect:hover{
+    border: 2px solid #fff;
+}
+
+.profile-resume:hover{
+    border: 2px solid #2c67f2;
+}
+
+@media(max-width:768px){
+    .profile img{
+        margin-bottom: 120px;
+        width: 200px;
+    }
+    .profile h1{
+        margin-top: 50px;
+        width: 90%;
+        font-size: 40px;
+    }
+
+    .profile p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+
+    .profile-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .profile-connect{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+
+    .profile-resume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+}
+
+
